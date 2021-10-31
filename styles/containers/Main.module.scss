@@ -1,0 +1,223 @@
+.container {
+    height: 100vh;
+    background-color: var(--Light-blue);
+    border-radius: 0px 0px 0px 700px;
+    //flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+.bolinhas {
+    position: absolute;
+    left: 200px;
+    bottom: 520px;
+}
+
+.content {
+    width: 45%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.texts {
+    p {
+        font-family: 'Poppins', sans-serif;
+        color: var(--Dark-blue);
+        line-height: 5px;
+        text-align: left;
+
+        font-weight: 500;
+
+        &:nth-child(1){
+            font-size: 2.5rem;
+        }
+        &:nth-child(2){
+            font-size: 3rem;
+        }
+    }
+
+    button {
+        background-color: var(--Orange);
+        border: none;
+        border-radius: 50px;
+        padding: 15px 25px;
+        font-weight: 600;
+        font-size: 1rem;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        cursor: pointer;
+        transition: 0.4s;
+        margin-top: 40px;
+
+        &:hover{
+            filter: brightness(90%);
+            transform: translateY(-5px);
+        }
+    }
+}
+
+.description {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.image {  
+    height: 100vh;
+    width: 50%;
+    margin: 0;
+    background-image: url("/teste.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: 480px;
+    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+@media (max-width: 1600px){
+    .container {
+        border-radius: 0px 0px 0px 600px;
+    }
+    .bolinhas {
+        width: 150px;
+        left: 100px;
+        bottom: 450px;
+    }
+}
+
+@media (max-width: 1400px){
+    .container {
+        border-radius: 0px 0px 0px 400px;   
+    }
+
+    .bolinhas {
+        width: 100px;
+        left: 130px;
+        bottom: 400px;
+    }
+
+    .texts {
+        p {
+            &:nth-child(1){
+                font-size: 2rem;
+            }
+            &:nth-child(2){
+                font-size: 2.5rem;
+            }
+        }
+    
+        button {
+            padding: 10px 20px;
+            font-weight: 600;
+            font-size: 0.8rem;
+        }
+    }
+    
+    .description {
+        font-family: 'Poppins', sans-serif;
+        color: black;
+        text-align: left;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 1280px){
+    .bolinhas {
+        width: 100px;
+        left: 100px;
+        bottom: 490px;
+    }
+}
+
+@media (max-width: 1000px){
+    .container {
+        border-radius: 0px 0px 0px 300px;   
+    }
+
+    .content {
+        width: 100%;
+        align-items: center;
+    }
+
+    .bolinhas {
+        display: none;
+    }
+    .image {
+        display: none;
+    }
+}
+
+@media (max-width: 500px){
+    .container {
+        border-radius: 0px 0px 0px 250px;   
+    }
+
+    .texts {
+        p {
+            &:nth-child(1){
+                font-size: 1.6rem;
+            }
+            &:nth-child(2){
+                font-size: 2.1rem;
+            }
+        }
+    
+        button {
+            padding: 10px 20px;
+            font-weight: 600;
+            font-size: 0.7rem;
+        }
+    }
+    
+    .description {
+        font-family: 'Poppins', sans-serif;
+        color: black;
+        text-align: left;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (max-width: 390px){
+    .container {
+        border-radius: 0px 0px 0px 250px;   
+    }
+
+    .texts {
+        p {
+            &:nth-child(1){
+                font-size: 1.4rem;
+            }
+            &:nth-child(2){
+                font-size: 1.8rem;
+            }
+        }
+    
+        button {
+            padding: 10px 20px;
+            font-weight: 600;
+            font-size: 0.7rem;
+        }
+    }
+    
+    .description {
+        font-family: 'Poppins', sans-serif;
+        color: black;
+        text-align: left;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+
+}

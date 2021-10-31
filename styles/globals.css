@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
+  background-color: var(--Dark-blue);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -13,4 +17,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --Dark-blue: #212738;
+  --Orange: #DC602E;
+  --Light-blue: #9DC7C8;
 }
