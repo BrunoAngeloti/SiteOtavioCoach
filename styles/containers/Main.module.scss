@@ -2,7 +2,6 @@
     height: 100vh;
     background-color: var(--Light-blue);
     border-radius: 0px 0px 0px 700px;
-    //flex-direction: row;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,6 +23,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    z-index: 9;
 }
 
 .texts {
@@ -101,8 +101,8 @@
 
     .bolinhas {
         width: 100px;
-        left: 130px;
-        bottom: 400px;
+        left: 130px;   
+        top: 140px;    
     }
 
     .texts {
