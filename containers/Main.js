@@ -9,7 +9,7 @@ export function Main() {
           <p>Olá,</p>
           <p>sou <strong>Otavio Angeloti</strong></p>
           <div className={styles.description}>
-            Analista de perfil comportamental<br/>
+            Analista de perfil comportamental CIS ASSESSMENT<br/>
             Coach integral sistemico
           </div>
           <button>COMECE HOJE</button>

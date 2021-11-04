@@ -3,7 +3,7 @@
     position: fixed;
     right: 0;
     top: 0;
-    gap: 4rem;
+    gap: 2.2rem;
     width: 100%;
     padding: 2rem 3rem 2rem 3rem;
     justify-content: center;
@@ -13,7 +13,7 @@
 
     .content, .active{
         display: flex;
-        gap: 4rem;
+        gap: 2.2rem;
         a {
             font-size: 1.3rem;
             font-family: 'Ubuntu', sans-serif;

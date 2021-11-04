@@ -7,12 +7,16 @@ export function About(props) {
         <img src="/fotoPai.png"/>
         <div className={styles.textArea}>
             <h1>Otavio Angeloti Pires</h1>
-            <p>Graduado em Administração - MULTIVIX</p>
+            <p>Graduado em Gestão Comercial - Estácio de Sá</p>
             <Bar type="1"/>
             <p>
-                Meu nome é Otavio Angeloti, tenho 52 anos e moro em Vitória - ES. Sou recém formado em administração e faixa marrom em kickboxing.<br/><br/>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not.<br/>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not.
+                Meu nome é Otavio Angeloti Pires, tenho 53 anos, nascido em São Paulo, morando em Vitória à 9 anos. Pai de Bruno e Pâmela e casado com Valéria à 27 anos.<br/><br/>
+                - Coach Integral Sistêmico formado pela Instituição <strong>FEBRACIS</strong>.<br/>
+                - Cursando Pós-Graduação <strong>Coaching e Neurociência</strong> Faculdade Febracis.<br/>
+                - Ministrante <strong>“O Poder da Ação”</strong> Best Seller de Paulo Vieira.<br/>
+                - Sou Gerente Comercial Segmento Segurança Eletrônica na <strong>Sudeste Atacado</strong>.<br/>
+                Praticante de <strong>Kickboxing</strong> à 8 anos e atualmente Faixa Marrom. Praticante de <strong>Kravmaga</strong> Defesa Pessoal à 1 ano e atualmente Faixa Amarela.<br/><br/>
+                Se eu fosse um bicho seria um <strong>Lobo</strong>, é líder e cuida da alcateia. Minha maior certeza... <strong>“Acreditar que podemos construir dias melhores!”</strong>.
             </p>
         </div>    
     </div>

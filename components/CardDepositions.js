@@ -1,19 +1,18 @@
 import styles from '../styles/components/CardDepositions.module.scss'
 
-export function CardDepositions(){
+export function CardDepositions(props){
+    const {title, text, name, description, img} = props.people;
     return(
         <div className={styles.container}>
             
-            <h1>“Extraordinária”</h1>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-            </p>
+            <h1>{title}</h1>
+            <p>{text}</p>
             
             <div className={styles.info}>
-                <img src="brunin.JPG" alt="bruno" />
+                <img src={img} alt="bruno" />
                 <div className={styles.title}>
-                    <h2>Bruno Angeloti</h2>
-                    <h3>Aluno da personal</h3>
+                    <h2>{name}</h2>
+                    <h3>{description}</h3>
                 </div>
             </div>
         </div>

@@ -63,11 +63,10 @@ export function Header(props) {
     <div 
       className={styles.container} 
       style={{
-        position: buttonActive && !background ? 'relative' : 'fixed', 
         transition: buttonActive && !background ? '0s' : '0.5s',
         top: !visible ? -200 : 0, 
         background: background || buttonActive ? '#9DC7C8' : 'transparent',
-        boxShadow: background ? '0px 2px 10px rgba(0, 0, 0, 0.25)' : 'none'
+        boxShadow: background || buttonActive ? '0px 2px 10px rgba(0, 0, 0, 0.25)' : 'none'
       }}
     >
       <div className={buttonActive ? styles.active : styles.content}>

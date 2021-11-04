@@ -34,9 +34,13 @@
         color: white;
         margin-top: 1.5rem;
         width: 100%;
-        font-weight: bold;
+        font-weight: 600;
         text-align: justify;
         font-family: 'Poppins', sans-serif;
+
+        strong{
+            color: var(--Orange)
+        }
     }
 }
 
@@ -106,10 +110,14 @@
     }
 
 }
+@media (max-width: 680px){
+    .container {
+        padding: 1.5rem 6rem 4rem 6rem;
+    }
+}
 
 @media (max-width: 600px){
     .container {
-        padding: 1.5rem 6rem 4rem 6rem;
         img {
             width: 350px;
             bottom: 0;
@@ -129,6 +137,12 @@
         }
     }
 
+}
+
+@media (max-width: 500px){
+    .container {
+        padding: 1.5rem 2rem 2rem 2rem; 
+    }
 }
 
 @media (max-width: 400px){
