@@ -4,8 +4,9 @@ export function CardDepositions(props){
     const {title, text, name, description, img} = props.people;
     return(
         <div className={styles.container}>
-            
-            <h1>{title}</h1>
+            <div className={styles.header}>
+                <h1>{title}</h1>
+            </div>
             <p>{text}</p>
             
             <div className={styles.info}>
