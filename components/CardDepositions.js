@@ -3,19 +3,13 @@ import styles from '../styles/components/CardDepositions.module.scss'
 export function CardDepositions(props){
     const {title, text, name, description, img} = props.people;
     return(
-        <div className={styles.container}>
-            <div className={styles.header}>
-                <h1>{title}</h1>
+        <div className={styles.containerFeedback}>
+            <div className={styles.feedbackProfileImage}>
+                <img src={img} alt="profile image" />
             </div>
-            <p>{text}</p>
+            <p className={styles.feedbackProfileText}>{text}</p>
             
-            <div className={styles.info}>
-                <img src={img} alt="bruno" />
-                <div className={styles.title}>
-                    <h2>{name}</h2>
-                    <h3>{description}</h3>
-                </div>
-            </div>
+            <h6 className={styles.feedbackName}>{name}, <span>{description}</span></h6>
         </div>
     )
 }

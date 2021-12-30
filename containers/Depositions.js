@@ -1,7 +1,10 @@
 import { CardDepositions } from '../components/CardDepositions'
 import styles from '../styles/containers/Depositions.module.scss'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 
 import {Bar} from '../components/Bar'
+
+import { Carousel } from 'react-responsive-carousel';
 
 const depositions = [
     {
@@ -35,11 +38,32 @@ export function Depositions(props){
                 <Bar type="1"/>
             </div>
             <div className={styles.content}>
-                {depositions.map((dep, index) => {
-                    return(
-                        <CardDepositions people={dep} key={index}/>
-                    )
-                })}
+                <Carousel
+                    autoPlay={true} 
+                    infiniteLoop={true} 
+                    showThumbs={false} 
+                    styles={{position: 'relative'}}
+                    renderArrowPrev={(clickHandler, hasPrev, labelPrev) =>
+                        hasPrev && (
+                            <button className={styles.buttonArrowLeft} onClick={clickHandler}>
+                                <img src="arrow-left.svg" alt="back" />
+                            </button>
+                        )
+                    }
+                    renderArrowNext={(clickHandler, hasNext, labelNext) =>
+                        hasNext && (
+                            <button className={styles.buttonArrowRight} onClick={clickHandler}>
+                                <img src="arrow-right2.svg" alt="next" />
+                            </button>
+                        )
+                    }
+                >
+                    {depositions.map((dep, index) => {
+                        return(
+                            <CardDepositions people={dep} key={index}/>
+                        )
+                    })}
+                </Carousel>
             </div>
         </div>
     )
