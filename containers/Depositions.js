@@ -42,6 +42,7 @@ export function Depositions(props){
                     autoPlay={true} 
                     infiniteLoop={true} 
                     showThumbs={false} 
+                    showStatus={false}
                     styles={{position: 'relative'}}
                     renderArrowPrev={(clickHandler, hasPrev, labelPrev) =>
                         hasPrev && (
