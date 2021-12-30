@@ -18,7 +18,7 @@ const depositions = [
         name: 'Flavia Effgem',
         description: 'Vendedora',
         title: '"Espetacular"',
-        text: 'O que dizer deste profissional? Eu era uma pessoa totalmente descontrolada financeiramente, não tinha dívidas mas também nunca consegui ter reserva, foi quando Otávio me convidou para participar do seminário Inteligência emocional, foi maravilhoso. Sai de lá com outro astral e com metas. Curtas, médias e longas, dando valor a coisas que nunca tinha percebido, com o comportamento diferente, sabe? Em dois meses já concretizei a meta de curto prazo , mas só aquele seminário não foi o suficiente para eu concretizar as outras metas , foi quando o Otávio mais um vez me ofereceu fazer um Coach individual comigo e eu, claro, aceitei de cara, ele me presenteou com o livro autoresponsabilidade, aquilo me dava um gás… e dois anos depois consegui concretizar minha meta de médio prazo. Só tenho Gratidão a você, Otávio.',
+        text: 'O que dizer deste profissional? Eu era uma pessoa totalmente descontrolada financeiramente, não tinha dívidas mas também nunca consegui ter reserva. Em dois meses já concretizei a meta de curto prazo, mas só aquele seminário não foi o suficiente para eu concretizar as outras metas, foi quando o Otávio mais um vez me ofereceu fazer um Coach individual comigo e eu, claro, aceitei de cara, ele me presenteou com o livro autoresponsabilidade, aquilo me dava um gás… Só tenho Gratidão a você, Otávio.',
         img: 'depositions/Flavia.png'
     },
     {
