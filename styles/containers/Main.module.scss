@@ -1,18 +1,19 @@
 .container {
-    height: 100vh;
-    background-color: var(--Light-blue);
-    border-radius: 0px 0px 0px 700px;
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 150px 20px 60px 20px;
+    position: relative;
+    background-color: var(--Light-blue);
     align-items: center;
-    justify-content: space-between;
-    overflow: hidden;
-
+    justify-content: center;
+    min-height: 80vh;
 }
 
-.bolinhas {
-    position: absolute;
-    left: 200px;
-    bottom: 520px;
+.section {
+    display: flex;
+    flex-direction: row;
+    max-width: 1280px;
 }
 
 .content {
@@ -72,39 +73,14 @@
 }
 
 .image {  
-    height: 100vh;
-    width: 50%;
-    margin: 0;
-    background-image: url("/teste.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position-x: 480px;
-    clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-@media (max-width: 1600px){
-    .container {
-        border-radius: 0px 0px 0px 600px;
-    }
-    .bolinhas {
-        width: 150px;
-        left: 100px;
-        bottom: 450px;
+    width: 55%;
+    padding-left: 20px;
+    @media (max-width: 992px) {
+        display: none;
     }
 }
 
 @media (max-width: 1400px){
-    .container {
-        border-radius: 0px 0px 0px 400px;   
-    }
-
-    .bolinhas {
-        width: 100px;
-        left: 130px;   
-        top: 140px;    
-    }
-
     .texts {
         p {
             &:nth-child(1){
@@ -132,37 +108,14 @@
 
 }
 
-@media (max-width: 1280px){
-    .bolinhas {
-        width: 100px;
-        left: 100px;
-        bottom: 490px;
-    }
-}
-
 @media (max-width: 1000px){
-    .container {
-        border-radius: 0px 0px 0px 300px;   
-    }
-
     .content {
         width: 100%;
         align-items: center;
     }
-
-    .bolinhas {
-        display: none;
-    }
-    .image {
-        display: none;
-    }
 }
 
 @media (max-width: 500px){
-    .container {
-        border-radius: 0px 0px 0px 250px;   
-    }
-
     .texts {
         p {
             &:nth-child(1){
@@ -191,10 +144,6 @@
 }
 
 @media (max-width: 390px){
-    .container {
-        border-radius: 0px 0px 0px 250px;   
-    }
-
     .texts {
         p {
             &:nth-child(1){

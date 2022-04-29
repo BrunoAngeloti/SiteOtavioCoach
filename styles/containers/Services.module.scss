@@ -4,12 +4,12 @@
     justify-content:center;
     flex-direction: column;
     padding: 30px 15px 100px 15px;
-    height: 100%;
-    background-image: url("/fundoServices2.jpg");
-    border-radius: 0px 0px 700px 0px;
+    min-height: 80vh;
+    background-image: url("/imageServices.jpg");
+   
     background-repeat: no-repeat;
-    
     background-size: cover;
+    background-attachment: fixed;
     
     .header {
         display: flex;
@@ -40,19 +40,16 @@
 
 @media (max-width: 1600px){
     .container {
-        border-radius: 0px 0px 600px 0px;
         .header {
             h1 {
                 font-size: 2.5rem;
             }
-        }
-        
+        }      
     }
 }
 
 @media (max-width: 1400px){
     .container {
-        border-radius: 0px 0px 400px 0px;
         .header {
             h1 {
                 font-size: 2rem;
@@ -70,7 +67,6 @@
 @media (max-width: 600px){
     .container{
         padding: 0px 15px 50px 15px;
-        border-radius: 0px 0px 100px 0px;
     }
     .header {
         justify-content:center;

@@ -40,6 +40,8 @@ export function Depositions(props){
             <div className={styles.content}>
                 <Carousel
                     autoPlay={true} 
+                    swipeable={false}
+                    emulateTouch={false}
                     infiniteLoop={true} 
                     showThumbs={false} 
                     showStatus={false}
