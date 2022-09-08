@@ -10,8 +10,9 @@ export function Videos(props){
         <h1>VIDEOS</h1>   
       </div>
       <div className={styles.content}>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/iJsgZZpowx8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/GD2MzhMiQxQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        {props.links?.map((link, index) => (
+          <iframe key={index} width="560" height="315" src={link.data.link_do_video.url} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        ))}
       </div>
     </div>
   )

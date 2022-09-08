@@ -10,10 +10,12 @@ import { Videos } from '../containers/Videos'
 
 import styles from '../styles/pages/Home.module.scss'
 
+import Prismic from 'prismic-javascript'
+
 import React, { useRef, useEffect, useState } from 'react'
 import Image from 'next/image'
 
-export default function Home() {
+export default function Home({ blogs, videosLink }) {
   const about = useRef(null);
   const services = useRef(null);
   const depositions = useRef(null);
@@ -55,7 +57,7 @@ export default function Home() {
       <About referencia={about}/>
       <Services referencia={services}/>
       <Depositions referencia={depositions}/>
-      <Videos referencia={videos}/>
+      <Videos referencia={videos} links={videosLink}/>
       <Contact referencia={contact}/>
       <Footer />
       {
@@ -67,4 +69,18 @@ export default function Home() {
       }   
     </div>
   )
+}
+
+
+
+export async function getServerSideProps({res}){
+  const client = await Prismic.client('https://angeloticoach.prismic.io/api/v2')
+  const blog = await client.query(Prismic.Predicates.at('document.type', 'blog'))
+  const video = await client.query(Prismic.Predicates.at('document.type', 'video'))
+  return{
+    props:{
+      blogs: blog.results,
+      videosLink: video.results
+    }
+  }
 }
