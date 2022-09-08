@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import styles from '../styles/containers/Header.module.scss'
 
 import Image from 'next/image'
+import Link from 'next/link'
 
 export function Header(props) {
   const [buttonActive, setButtonActive] = useState(false);
@@ -75,6 +76,9 @@ export function Header(props) {
         <button onClick={() => goToAbout()}>SOBRE</button>
         <button onClick={() => goToServices()}>SERVIÇOS</button>
         <button onClick={() => goToDepositions()}>DEPOIMENTOS</button>
+        <Link href="/blogs" passHref>
+          <a>BLOG</a>
+        </Link>
         <button onClick={() => goToContact()}>CONTATO</button>
       </div>
       <button onClick={() => handleActive()} className={styles.hamburguer}>

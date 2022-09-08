@@ -14,6 +14,7 @@ import Prismic from 'prismic-javascript'
 
 import React, { useRef, useEffect, useState } from 'react'
 import Image from 'next/image'
+import { BlogsContainer } from '../containers/BlogsContainer'
 
 export default function Home({ blogs, videosLink }) {
   const about = useRef(null);
@@ -57,6 +58,7 @@ export default function Home({ blogs, videosLink }) {
       <About referencia={about}/>
       <Services referencia={services}/>
       <Depositions referencia={depositions}/>
+      <BlogsContainer blogs={blogs}/>
       <Videos referencia={videos} links={videosLink}/>
       <Contact referencia={contact}/>
       <Footer />
