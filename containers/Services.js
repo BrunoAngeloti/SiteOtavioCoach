@@ -31,6 +31,7 @@ export function Services(props) {
       showCloseButton: false,
       showCancelButton: false,
       focusConfirm: false,
+      width: '80%'
     })
   }
 

@@ -6,6 +6,7 @@ import ReactLoading from "react-loading";
 import Swal from 'sweetalert2'
 
 import { Bar } from '../components/Bar'
+import Image from 'next/image';
 
 export function Contact(props){
 
@@ -89,31 +90,31 @@ export function Contact(props){
                     <div className={styles.contentInfo}>
                         <Bar type="1" color="blue"/>
                         <div className={styles.info}>
-                            <img src="iconMap.svg" alt="icone de mapa" />
+                            <Image src="/iconMap.svg" alt="icone de mapa" width={40} height={40}/>
                             <p>Vitória-ES</p>
                         </div>
                         <div className={styles.info}>
-                            <img src="iconPhone.svg" alt="icone de telefone" />
+                            <Image src="/iconPhone.svg" alt="icone de telefone" width={40} height={40}/>
                             <p>(27)99862-4937</p>
                         </div>
                         <div className={styles.info}>
-                            <img src="iconEmail.svg" alt="icone de email" />
+                            <Image src="/iconEmail.svg" alt="icone de email" width={40} height={40}/>
                             <p>otavioangeloti@terra.com.br</p>
                         </div>
                         <Bar type="2" color="blue"/>
                     </div>
                     <div className={styles.socialMedias}>
-                        <a href="https://www.instagram.com/otavioangeloticoach/" target="_blank">
-                            <img src="iconInsta.svg" alt="icon instagram" />
+                        <a href="https://www.instagram.com/otavioangeloticoach/" target="_blank" rel="noreferrer">
+                            <Image src="/iconInsta.svg" alt="icon instagram" width={48} height={48}/>
                         </a>
-                        <a href="https://www.facebook.com/otavio.angelotipires" target="_blank">
-                            <img src="iconFace.svg" alt="icon facebook" />
+                        <a href="https://www.facebook.com/otavio.angelotipires" target="_blank" rel="noreferrer">
+                            <Image src="/iconFace.svg" alt="icon facebook" width={48} height={48}/>
                         </a>
-                        <a href="https://www.linkedin.com/in/ot%C3%A1vio-angeloti-pires-75006954/" target="_blank">
-                            <img src="iconLinkedin.svg" alt="icon linkedin" />
+                        <a href="https://www.linkedin.com/in/ot%C3%A1vio-angeloti-pires-75006954/" target="_blank" rel="noreferrer">
+                            <Image src="/iconLinkedin.svg" alt="icon linkedin" width={48} height={48}/>
                         </a>
-                        <a href="https://wa.me/5527998624937/" target="_blank">
-                            <img src="iconZap.svg" alt="icon whatsapp" />
+                        <a href="https://wa.me/5527998624937/" target="_blank" rel="noreferrer">
+                            <Image src="/iconZap.svg" alt="icon whatsapp" width={48} height={48}/>
                         </a>
                     </div>
                 </div>

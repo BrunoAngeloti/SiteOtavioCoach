@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import styles from '../styles/containers/Header.module.scss'
 
+import Image from 'next/image'
+
 export function Header(props) {
   const [buttonActive, setButtonActive] = useState(false);
   const [visible, setVisible] = useState(true);
@@ -70,14 +72,15 @@ export function Header(props) {
       }}
     >
       <div className={buttonActive ? styles.active : styles.content}>
-        <a onClick={() => goToAbout()}>SOBRE</a>
-        <a onClick={() => goToServices()}>SERVIÇOS</a>
-        <a onClick={() => goToDepositions()}>DEPOIMENTOS</a>
-        <a onClick={() => goToContact()}>CONTATO</a>
+        <button onClick={() => goToAbout()}>SOBRE</button>
+        <button onClick={() => goToServices()}>SERVIÇOS</button>
+        <button onClick={() => goToDepositions()}>DEPOIMENTOS</button>
+        <button onClick={() => goToContact()}>CONTATO</button>
       </div>
       <button onClick={() => handleActive()} className={styles.hamburguer}>
-        {
-          !buttonActive ?  <img src="menu.svg" alt="icone de menu" /> : <img src="x.svg" alt="icone de fechar" />
+        {!buttonActive ? 
+          <Image src="/menu.svg" alt="icone de menu" width={25} height={25}/> : 
+          <Image src="/x.svg" alt="icone de fechar" width={25} height={25}/>
         }
       </button>
     </div>

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from '../styles/components/CardDepositions.module.scss'
 
 export function CardDepositions(props){
@@ -5,7 +6,7 @@ export function CardDepositions(props){
     return(
         <div className={styles.containerFeedback}>
             <div className={styles.feedbackProfileImage}>
-                <img src={img} alt="profile image" />
+                <Image src={img} alt="profile image" width={100} height={100}/>
             </div>
             <p className={styles.feedbackProfileText}>{text}</p>
             

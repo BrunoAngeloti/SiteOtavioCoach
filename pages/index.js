@@ -11,6 +11,7 @@ import { Videos } from '../containers/Videos'
 import styles from '../styles/pages/Home.module.scss'
 
 import React, { useRef, useEffect, useState } from 'react'
+import Image from 'next/image'
 
 export default function Home() {
   const about = useRef(null);
@@ -46,6 +47,7 @@ export default function Home() {
       <Head>
         <title>Otavio Angeloti</title>
         <meta name="Site do Coach Otavio Angeloti" content="Site do Coach Otavio Angeloti" />
+        <meta name="description" content="Site do Coach Otavio Angeloti" />
         <link rel="icon" href="/logo.ico" />
       </Head>
       <Header pag1={about} pag2={services} pag3={depositions} pag4={contact}/>
@@ -59,7 +61,7 @@ export default function Home() {
       {
         buttonTop && (
         <button onClick={() => goToTop()} className={styles.buttonGlobal}>
-            <img src="/arrow-up.svg" alt="imagem seta" />
+            <Image src="/arrow-up.svg" alt="imagem seta" width={30} height={30}/>
         </button>
         )
       }   
