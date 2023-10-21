@@ -42,16 +42,6 @@
     }
 }
 
-@media (max-width: 1400px){
-    .container{
-        .content {
-            a {
-                font-size: 1rem;               
-            }
-        }
-    }
-}
-
 @media (max-width: 800px){
     .container{
         flex-direction: column-reverse;
@@ -73,7 +63,4 @@
             align-items: center;
         }      
     }
-    
-    
-    
 }

@@ -31,7 +31,7 @@ export function Services(props) {
       showCloseButton: false,
       showCancelButton: false,
       focusConfirm: false,
-      width: '80%'
+      width: '60%'
     })
   }
 
@@ -50,6 +50,7 @@ export function Services(props) {
 
   return (
     <div ref={props.referencia} className={styles.container}>
+      <div className={styles.backdrop}></div>
       <div className={styles.header}>
         <Bar type="1" color="blue"/>
         <h1>SERVIÇOS</h1>

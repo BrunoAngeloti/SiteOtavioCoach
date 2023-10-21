@@ -17,9 +17,9 @@ export function Main() {
               <a 
                 target="_blank"
                 rel="noreferrer" 
-                href="https://api.whatsapp.com/send?phone=5527998624937&text=Ol%C3%A1%2C%20Ot%C3%A1vio!%20Eu%20gostaria%20de%20come%C3%A7ar%20um%20servi%C3%A7o%20com%20voc%C3%AA!"
+                href="https://cisassessment.com.br/degustacao/httpspagae7vwkm41g7"
               >
-                COMECE HOJE
+                Faça uma análise gratuíta AGORA!
               </a>
             </button>           
           </div>  

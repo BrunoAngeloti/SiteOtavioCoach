@@ -23,28 +23,6 @@ export default function Home({ blogs, videosLink }) {
   const contact = useRef(null);
   const videos = useRef(null);
 
-  const [buttonTop, setButtonTop] = useState(false);
-
-  function handleScroll(){
-    if(window.pageYOffset > 100){
-      setButtonTop(true);
-    }else{
-      setButtonTop(false);
-    }
-  };
-
-  function goToTop(){
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    })
-    setButtonTop(false);
-  }
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-  }, [])
-
   return (
     <div>
       <Head>
@@ -62,13 +40,13 @@ export default function Home({ blogs, videosLink }) {
       <Videos referencia={videos} links={videosLink}/>
       <Contact referencia={contact}/>
       <Footer />
-      {
-        buttonTop && (
-        <button onClick={() => goToTop()} className={styles.buttonGlobal}>
-            <Image src="/arrow-up.svg" alt="imagem seta" width={30} height={30}/>
-        </button>
-        )
-      }   
+      <a 
+        className={styles.buttonGlobal}
+        target="_blank"
+        rel="noreferrer"
+        href="https://api.whatsapp.com/send?phone=5527998624937&text=Ol%C3%A1%2C%20Ot%C3%A1vio!%20Eu%20gostaria%20de%20come%C3%A7ar%20um%20servi%C3%A7o%20com%20voc%C3%AA!">
+          <Image src="/zap.svg" alt="icone whatsapp" width={30} height={30}/>
+      </a>  
     </div>
   )
 }
