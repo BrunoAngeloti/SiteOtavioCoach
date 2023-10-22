@@ -104,7 +104,7 @@ export function Contact(props){
                         <Bar type="2" color="blue"/>
                     </div>
                     <div className={styles.socialMedias}>
-                        <a href="https://www.instagram.com/otavioangeloticoach/" target="_blank" rel="noreferrer">
+                        <a href="https://www.instagram.com/otavioangeloti.lider/" target="_blank" rel="noreferrer">
                             <Image src="/iconInsta.svg" alt="icon instagram" width={48} height={48}/>
                         </a>
                         <a href="https://www.facebook.com/otavio.angelotipires" target="_blank" rel="noreferrer">
